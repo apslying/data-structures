@@ -1,0 +1,17 @@
+
+public class Move {
+	public int beginfile;
+	public int beginrank;
+	public int endfile;
+	public int endrank;
+	
+	public Move(int beginfile, int beginrank, int endfile,
+			int endrank) {
+		this.beginfile = beginfile;
+		this.beginrank = beginrank;
+		this.endfile = endfile;
+		this.endrank = endrank;
+	}
+
+	
+}

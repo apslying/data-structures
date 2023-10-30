@@ -1,0 +1,78 @@
+import java.util.LinkedList;
+
+public class Rook{
+	
+	public LinkedList<Move> positionsAfterAllPossibleMoves(Position Pos, int file, int rank){
+		LinkedList<Move> rookMoves= new LinkedList<Move>(); 
+		
+		int newRank=rank+1; //north (from whites/both? perspective)
+		int newFile=file;
+		while(newRank<8){
+			if (Pos[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newRank++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank-1;//south
+		newFile=file;
+		while(newRank>=0){
+			if (Pos[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newRank--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank;//east
+		newFile=file+1;
+		while(newFile<8){
+			if (Pos[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newFile++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank;//west
+		newFile=file-1;
+		while(newFile>=0){
+			if (Pos[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newFile--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		return rookMoves;
+	}
+	
+	/*public void canMove(){
+		//don't get sidetracked by small things like min and max not working. can fix that later.
+		//again, dont be bothered by renameing, you can do that later
+		while(max(endRank,endFile)<=7 && min(endRank,endFile)>=0){//this needs fixing. basically, N E S W of current rook position 
+			if(Board[endRank][endFile]==null){//if the rook can move here, create a new node, and add to tree 
+				EvalNode newNode= new EvalNode(startRank,startFile,endRank,endFile,countMaterial);
+				//need to think about inserting nodes to the second level LATER. first only have one level eval, and simple eval 
+				tree.insertNodeInto(newNode, root, int index);
+
+			}
+		}
+		
+			
+	}*/
+
+}

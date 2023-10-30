@@ -1,0 +1,62 @@
+import java.lang.Math;
+import java.util.LinkedList;
+public class Bishop {
+	public LinkedList<Move> positionsAfterAllPossibleMoves(int[][] Pos, int file, int rank){
+		LinkedList<Move> bishopMoves= new LinkedList<Move>();
+		
+		int newRank=rank+1; //northeast (from whites/both? perspective)
+		int newFile=file+1;
+		while(newRank<8 && newRank>=0 && newFile<8 && newFile>=0){
+			if (Pos[newRank][newFile]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newRank++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank-1;//south
+		newFile=file;
+		while(newRank>=0){
+			if (Pos[newRank][newFile]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newRank--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank;//east
+		newFile=file+1;
+		while(newFile<8){
+			if (Pos[newRank][newFile]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newFile++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank;//west
+		newFile=file-1;
+		while(newFile>=0){
+			if (Pos[newRank][newFile]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newFile--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		return bishopMoves;
+	}
+	
+}

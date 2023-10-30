@@ -1,0 +1,90 @@
+import java.lang.Math;
+import java.util.LinkedList;
+
+public class Rook {
+	
+	//maybe need this next line: 
+	public int endRank;
+	public int endFile;
+	public int startRank=endRank;
+	public int startFile=endFile;
+	
+	public LinkedList<int[][]> positionsAfterAllPossibleMoves(int[][] Pos, int rank, int file){
+		int[][] tempPos=Pos;
+		LinkedList<int[][]> rookMoves= new LinkedList<int[][]>(); 
+		
+		int tempRank=rank+1; //north (from whites/both? perspective)
+		int tempFile=file;
+		while(tempRank<8){
+			if (Pos[tempRank][tempFile]==0){
+				Pos[rank][file]=0;
+				Pos[tempRank][tempFile]=500;
+				rookMoves.add(tempPos);
+				tempRank++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		tempRank=rank-1;//south
+		tempFile=file;
+		while(tempRank>=0){
+			if (Pos[tempRank][tempFile]==0){
+				Pos[rank][file]=0;
+				Pos[tempRank][tempFile]=500;
+				rookMoves.add(tempPos);
+				tempRank--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		tempRank=rank;//east
+		tempFile=file+1;
+		while(tempFile<8){
+			if (Pos[tempRank][tempFile]==0){
+				Pos[rank][file]=0;
+				Pos[tempRank][tempFile]=500;
+				rookMoves.add(tempPos);
+				tempFile++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		tempRank=rank;//west
+		tempFile=file-1;
+		while(tempFile>=0){
+			if (Pos[tempRank][tempFile]==0){
+				Pos[rank][file]=0;
+				Pos[tempRank][tempFile]=500;
+				rookMoves.add(tempPos);
+				tempFile--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		return rookMoves;
+	}
+	
+	public void canMove(){
+		//don't get sidetracked by small things like min and max not working. can fix that later.
+		//again, dont be bothered by renameing, you can do that later
+		while(max(endRank,endFile)<=7 && min(endRank,endFile)>=0){//this needs fixing. basically, N E S W of current rook position 
+			if(Board[endRank][endFile]==null){//if the rook can move here, create a new node, and add to tree 
+				EvalNode newNode= new EvalNode(startRank,startFile,endRank,endFile,countMaterial);
+				//need to think about inserting nodes to the second level LATER. first only have one level eval, and simple eval 
+				tree.insertNodeInto(newNode, root, int index);
+
+			}
+		}
+		
+			
+	}
+
+}

@@ -1,0 +1,67 @@
+{
+  "/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar",
+    "status": "RESOLVED"
+  },
+  "/Users/ywu/Documents/workspace/PhoneBook/src": {
+    "location": "/Users/ywu/Documents/workspace/PhoneBook/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/PhoneBook/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/PhoneBook Java App/src": {
+    "location": "/Users/ywu/Documents/workspace/PhoneBook Java App/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/PhoneBook Java App/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/InterfacePractice2/src": {
+    "location": "/Users/ywu/Documents/workspace/InterfacePractice2/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/InterfacePractice2/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/HW6/src": {
+    "location": "/Users/ywu/Documents/workspace/HW6/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/HW6/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/Quiz2/src": {
+    "location": "/Users/ywu/Documents/workspace/Quiz2/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/Quiz2/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/DS HW1/src": {
+    "location": "/Users/ywu/Documents/workspace/DS HW1/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/DS HW1/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/Test - Data Structures/src": {
+    "location": "/Users/ywu/Documents/workspace/Test - Data Structures/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/Test - Data Structures/src\u0027. Skipped."
+  },
+  "/Users/ywu/Downloads/RecitationNotes2016Feb24": {
+    "location": "/Users/ywu/Downloads/RecitationNotes2016Feb24",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Downloads/RecitationNotes2016Feb24\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/DS HW3/src": {
+    "location": "/Users/ywu/Documents/workspace/DS HW3/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/DS HW3/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/TreesStudents/src": {
+    "location": "/Users/ywu/Documents/workspace/TreesStudents/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/TreesStudents/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/DS Prog3/src": {
+    "location": "/Users/ywu/Documents/workspace/DS Prog3/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/DS Prog3/src\u0027. Skipped."
+  },
+  "/Users/ywu/Documents/workspace/Final Prep/src": {
+    "location": "/Users/ywu/Documents/workspace/Final Prep/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/Users/ywu/Documents/workspace/Final Prep/src\u0027. Skipped."
+  }
+}

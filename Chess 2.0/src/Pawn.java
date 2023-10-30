@@ -1,0 +1,41 @@
+import java.util.LinkedList;
+public class Pawn {
+	public static final int piece=100;
+
+	
+	public static LinkedList<Move> positionsAfterAllPossibleMoves(Position Pos, int file, int rank){
+		LinkedList<Move> pawnMoves= new LinkedList<Move>();
+		if(Pos.whiteToMove==true){
+			if(Pos.matrix[file][rank+1]==0){
+				Move aMove= new Move(piece, file, rank, file, rank+1);
+				pawnMoves.add(aMove);
+			}
+			
+			if(rank==1){
+				if(Pos.matrix[file][rank+2]==0){
+					Move aMove= new Move(piece, file, rank, file, rank+2);
+					pawnMoves.add(aMove);
+				}
+			}
+
+		}
+		
+		else if(Pos.whiteToMove==false){
+			if(Pos.matrix[file][rank-1]==0){
+				Move aMove= new Move(piece, file, rank, file, rank-1);
+				pawnMoves.add(aMove);
+			}
+			
+			if(rank==1){
+				if(Pos.matrix[file][rank-2]==0){
+					Move aMove= new Move(piece, file, rank, file, rank-2);
+					pawnMoves.add(aMove);
+				}
+			}
+
+		}
+		
+		
+		return pawnMoves;
+	}
+}

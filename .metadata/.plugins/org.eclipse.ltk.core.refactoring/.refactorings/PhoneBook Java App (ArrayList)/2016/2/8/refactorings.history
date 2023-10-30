@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;input&apos; in &apos;PhoneBookApp1.main(...)&apos; to &apos;choice&apos;&#x0A;- Original project: &apos;PhoneBook Java App (ArrayList)&apos;&#x0A;- Original element: &apos;PhoneBookApp1.main(String[]).input&apos;&#x0A;- Renamed element: &apos;input&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;input&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{PhoneBookApp1.java[PhoneBookApp1~main~\[QString;@input!100!109!104!108!I!0!false" name="choice" references="true" stamp="1455580126163" version="1.0"/>
+</session>

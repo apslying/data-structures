@@ -1,0 +1,22 @@
+import java.lang.Math;
+import java.util.LinkedList;
+public class Knight {
+	public int endFile;
+	public int endRank;
+	public int startFile=endFile;
+	public int startRank=endRank;
+	
+	public LinkedList<int[][]> positionsAfterAllPossibleMoves(int[][] Pos, int rank, int file){
+		int[][] tempPos=Pos;
+		LinkedList<int[][]> knightMoves= new LinkedList<int[][]>();
+		int[] numbers= {-2,-1,1,2};
+		for(int i:numbers){
+			for(int j: numbers){
+				if (abs(i)!=abs(j)){
+					//checks each of the 8 squares 
+					if(A[i][j].occupied==False){
+		
+	}
+					
+
+}

@@ -1,0 +1,20 @@
+
+public class Move {
+	piecetype;
+	beginsquare;
+	endsquare;
+	
+	
+	GetBeginSquare{
+	
+	}
+	GetEndSquare{
+		
+	}
+	GetPieceType{
+		
+	}
+	boolean DoesPromote{
+		
+	}
+}

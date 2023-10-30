@@ -1,0 +1,11 @@
+import java.lang.Math;
+import java.util.LinkedList;
+public class Bishop {
+	public LinkedList<Move> positionsAfterAllPossibleMoves(int[][] Pos, int file, int rank){
+		LinkedList<Move> bishopMoves= new LinkedList<Move>();
+		int newfile
+		
+		return bishopMoves;
+	}
+	
+}

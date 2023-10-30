@@ -1,0 +1,23 @@
+import java.lang.Math;
+public class Rook extends Piece {
+	
+	//maybe need this next line: 
+	public int endRank;
+	public int endFile;
+	public int startRank=endRank;
+	public int startFile=endFile;
+	
+	
+	
+	public void canMove(){
+		//don't get sidetracked by small things like min and max not working. can fix that later. 
+		while(max(endRank,endFile)<=7 && min(endRank,endFile)>=0){//this needs fixing. basically, N E S W of current rook position 
+			if(Board[endRank][endFile]==null){//if the rook can move here, create a new node, and add to tree 
+				new EvalNode(startRank,startFile,endRank,endFile,countMaterial)
+			}
+		}
+		
+			
+	}
+
+}

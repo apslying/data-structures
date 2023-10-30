@@ -1,0 +1,29 @@
+import java.util.LinkedList;
+public class Position {
+	private int[][] matrix;
+	
+	public Position(int[][] m){//I want int[8][8]
+		matrix=m;
+	}
+	
+	public int[][] GetPosition(){
+		return matrix;
+	}
+	
+	public LinkedList<Move> ListMoves(){
+		LinkedList<Move> listOfMoves=new LinkedList<Move>();
+		for (int file=0; file<8; file++){
+			for (int rank=0; rank<8; rank++){
+				int piece=matrix[file][rank];
+				switch (piece){
+				case 0:
+					break;
+				
+				
+					
+				}
+			}
+
+		}
+	}
+}

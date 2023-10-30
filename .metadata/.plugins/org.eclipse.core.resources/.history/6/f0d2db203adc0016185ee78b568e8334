@@ -1,0 +1,47 @@
+import java.util.LinkedList;
+public class Position {
+	public int[][] matrix;
+	public boolean whiteToMove; 
+	
+	
+	public Position(int[][] m){//I want int[8][8]
+		matrix=m;
+	}
+	
+	public int[][] GetPosition(){
+		return matrix;
+	}
+	
+	public Position PositionAfterMove(Move aMove){
+		matrix[aMove.beginfile][aMove.beginrank]=0;
+		switch (aMove.piece){
+		case
+		}
+		whiteToMove=!whiteToMove;
+	}
+	
+	public LinkedList<Move> ListMoves(Position Pos){//must have a list of all moves, can't split up by square 
+		LinkedList<Move> listOfMoves=new LinkedList<Move>();
+		for (int file=0; file<8; file++){
+			for (int rank=0; rank<8; rank++){
+				int whichPiece=matrix[file][rank];
+				switch (whichPiece){
+				case 0:
+					break;
+				case 100:
+					LinkedList<Move> pawnMoves= Pawn.positionsAfterAllPossibleMoves(Pos, file, rank);
+				//...
+
+				case 500:
+					LinkedList<Move> rookMoves= Rook.positionsAfterAllPossibleMoves(Pos, file, rank);
+					listOfMoves.addAll(rookMoves);
+				
+				
+					
+				}
+			}
+
+		}
+		return listOfMoves;
+	}
+}

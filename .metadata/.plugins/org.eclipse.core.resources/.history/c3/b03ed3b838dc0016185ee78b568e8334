@@ -1,0 +1,124 @@
+import java.util.LinkedList;
+public class Queen {
+	
+	public LinkedList<Move> positionsAfterAllPossibleMoves(Position Pos, int file, int rank){
+		LinkedList<Move> queenMoves= new LinkedList<Move>();
+		LinkedList<Move> rookMoves= new LinkedList<Move>(); 
+		LinkedList<Move> bishopMoves= new LinkedList<Move>();
+
+		
+		int newRank=rank+1; //north (from whites/both? perspective)
+		int newFile=file;
+		while(newRank<8){
+			if (Pos.matrix[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newRank++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank-1;//south
+		newFile=file;
+		while(newRank>=0){
+			if (Pos.matrix[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newRank--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank;//east
+		newFile=file+1;
+		while(newFile<8){
+			if (Pos.matrix[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newFile++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newRank=rank;//west
+		newFile=file-1;
+		while(newFile>=0){
+			if (Pos.matrix[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				rookMoves.add(aMove);
+				newFile--;
+			}
+			else{
+				break;
+			}
+		}
+				
+		newFile=file+1;
+		newRank=rank+1; //northeast (from whites/both? perspective)
+		while(newFile<8 && newFile>=0 && newRank<8 && newRank>=0){
+			if (Pos.matrix[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				bishopMoves.add(aMove);
+				newFile++;
+				newRank++;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newFile=file-1;
+		newRank=rank-1; //southwest
+		while(newFile<8 && newFile>=0 && newRank<8 && newRank>=0){
+			if (Pos.matrix[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				bishopMoves.add(aMove);
+				newFile--;
+				newRank--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		newFile=file-1;
+		newRank=rank+1; //northwest
+		while(newFile<8 && newFile>=0 && newRank<8 && newRank>=0){
+			if (Pos.matrix[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				bishopMoves.add(aMove);
+				newFile--;
+				newRank++;
+			}
+			else{
+				break;
+			}
+		}
+	
+		newFile=file+1;
+		newRank=rank-1; //southeast
+		while(newFile<8 && newFile>=0 && newRank<8 && newRank>=0){
+			if (Pos.matrix[newFile][newRank]==0){
+				Move aMove= new Move(file, rank, newFile, newRank);
+				bishopMoves.add(aMove);
+				newFile++;
+				newRank--;
+			}
+			else{
+				break;
+			}
+		}
+		
+		rookMoves.addAll(bishopMoves);
+		queenMoves=rookMoves;
+		
+		return queenMoves;
+	}
+
+}

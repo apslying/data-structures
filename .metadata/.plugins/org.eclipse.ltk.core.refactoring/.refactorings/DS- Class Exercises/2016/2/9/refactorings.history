@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;X&apos; in &apos;Merge.Merge(...)&apos; to &apos;x&apos;&#x0A;- Original project: &apos;DS- Class Exercises&apos;&#x0A;- Original element: &apos;Merge.Merge(int[], int[], int[]).X&apos;&#x0A;- Renamed element: &apos;X&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;X&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Merge.java[Merge~Merge~\[I~\[I~\[I@X!69!75!75!75!\[I!0!true" name="x" references="true" stamp="1456428725643" version="1.0"/>
+</session>

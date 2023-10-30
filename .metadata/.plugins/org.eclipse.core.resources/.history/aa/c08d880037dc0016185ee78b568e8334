@@ -1,0 +1,15 @@
+import java.util.LinkedList;
+
+public class MoveTree {
+	public void AddListOfMoves(LinkedList<Move> listOfMoves){
+		//tree where each node is a linkedlist
+	}
+	
+	public Move BestMove(){
+		
+	}
+	
+	public int GetDepth(){
+		
+	}
+}

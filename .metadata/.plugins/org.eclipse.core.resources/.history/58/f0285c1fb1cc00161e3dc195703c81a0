@@ -1,0 +1,19 @@
+
+public class Rook extends Piece {
+	
+	//maybe need this next line: 
+	public int rank;
+	public int file;
+	
+	
+	public canMove(){
+		while(max(int i,int j)<=7 && min(i,j)>=0){
+			if(Board[i][j]==null){
+				new EvalNode
+			}
+		}
+		
+			
+	}
+
+}

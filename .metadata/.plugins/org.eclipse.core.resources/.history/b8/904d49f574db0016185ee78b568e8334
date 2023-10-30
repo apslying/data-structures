@@ -1,0 +1,15 @@
+import java.util.LinkedList;
+public class Pawn {
+	public LinkedList<Move> positionsAfterAllPossibleMoves(int[][] Pos, int file, int rank){
+		LinkedList<Move> pawnMoves= new LinkedList<Move>();
+		if(Color=="white"){
+			if(Pos[file][rank+1]==0){
+				Move aMove= new Move(file, rank, file, rank+1);
+				pawnMoves.add(aMove);
+			}
+
+		}
+		
+		return pawnMoves;
+	}
+}

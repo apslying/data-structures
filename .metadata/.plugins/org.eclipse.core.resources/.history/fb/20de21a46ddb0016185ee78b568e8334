@@ -1,0 +1,14 @@
+import java.util.LinkedList;
+public class Knight {
+	public int endRank;
+	public int endFile;
+	public int startRank=endRank;
+	public int startFile=endFile;
+	
+	public LinkedList<int[][]> positionsAfterAllPossibleMoves(int[][] Pos, int rank, int file){
+		int[][] tempPos=Pos;
+		LinkedList<int[][]> knightMoves= new LinkedList<int[][]>();
+		
+	}
+
+}
